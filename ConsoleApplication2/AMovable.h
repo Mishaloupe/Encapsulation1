@@ -2,10 +2,10 @@
 #include "Vector2.h"
 
 class AMovable {
-private:
+public:
 	Vector2 direction;
 	float speed;
-public:
+
 	AMovable();
 	AMovable(Vector2 direction, float speed);
 

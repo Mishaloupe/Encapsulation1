@@ -13,10 +13,15 @@ Player::Player(Vector2 _pos, float _maxHealth, float _actualHealth, Vector2 _dir
 
 
 void Player::takeDamage(float _damage) {
-	std::cout << "Player just die" << std::endl;
+	this->actualHealth -= _damage;
+	if (actualHealth <= 0) {
+		std::cout << "Player just die" << std::endl;
+	}
 }
 
 void Player::Movement() {
+	Vector2 characterPos = this->GetPos();
+	this->SetPos(Vector2(characterPos.GetX() + this->direction.GetX() * speed, characterPos.GetY() + this->direction.GetY() * speed));
 	std::cout << "Player move to x = " << std::to_string(pos.GetX()) << " and y = " << std::to_string(pos.GetY()) << std::endl;
 }
 

@@ -13,9 +13,14 @@ Mob::Mob(float _x, float _y, float _maxHealth, float _actualHealth, Vector2 _dir
 
 
 void Mob::takeDamage(float _damage) {
-	std::cout << "Mob just die" << std::endl;
+	this->actualHealth -= _damage;
+	if (actualHealth <= 0) {
+		std::cout << "Mob just died" << std::endl;
+	}
 }
 
 void Mob::Movement() {
+	Vector2 ennemyPos = this->GetPos();
+	this->SetPos(Vector2(ennemyPos.GetX() + this->direction.GetX() * speed, ennemyPos.GetY() + this->direction.GetY() * speed));
 	std::cout << "Mob move to x = " << std::to_string(pos.GetX()) << " and y = " << std::to_string(pos.GetY()) << std::endl;
 }

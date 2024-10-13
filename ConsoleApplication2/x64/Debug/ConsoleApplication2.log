@@ -1,16 +1,2 @@
-﻿  Alive.cpp
-  AMovable.cpp
-  BreakableObject.cpp
-  ConsoleApplication2.cpp
-  Entity.cpp
-  Mob.cpp
-  Player.cpp
-  StaticObject.cpp
-  StaticObject.h
-  Vector2.cpp
-  World.cpp
-  Génération de code en cours...
-x64\Debug\StaticObject.obj : warning LNK4042: objet spécifié plus d'une fois ; définitions supplémentaires ignorées
-  ConsoleApplication2.vcxproj -> C:\Users\lbeden\source\repos\Encapsulation1\x64\Debug\ConsoleApplication2.exe
-  'pwsh.exe' n'est pas reconnu en tant que commande interne
-  ou externe, un programme exécutable ou un fichier de commandes.
+﻿  World.cpp
+  ConsoleApplication2.vcxproj -> D:\Ecole\Perso\Encapsulation1\x64\Debug\ConsoleApplication2.exe

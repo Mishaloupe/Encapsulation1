@@ -9,5 +9,5 @@ public:
 	World();
 
 	void Init();
-	void Step();
+	int Step();
 };

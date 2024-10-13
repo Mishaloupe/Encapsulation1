@@ -9,5 +9,5 @@ public:
 	Entity(Vector2 pos);
 
 	Vector2 GetPos() const;
-	void SetPos(Vector2);
+	virtual void SetPos(Vector2);
 };

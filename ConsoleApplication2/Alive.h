@@ -1,10 +1,10 @@
 #pragma once
 
 class Alive {
-private:
+public:
 	float maxHealth;
 	float actualHealth;
-public:
+
 	Alive();
 	Alive(float maxHealth, float actualHealth);
 
